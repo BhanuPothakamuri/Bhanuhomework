@@ -15,7 +15,7 @@ function validate()
 		if (Fname.value ===  null || Fname.value === "")
 		{
                        result = false;
-                       alert ("Firstname cannot be null ra edawa");
+                       alert ("Firstname cannot be null");
                        return(result);
 		}
            return (result);
