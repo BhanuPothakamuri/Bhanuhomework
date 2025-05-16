@@ -1,0 +1,45 @@
+{
+  "name": "react-multistep",
+  "version": "6.0.0-alpha",
+  "description": "Responsive ReactJS multistep form component",
+  "main": "dist/index.js",
+  "files": [
+    "build/*.d.ts",
+    "dist/index.js",
+    "src/index.js",
+    "src/MultiStep.jsx"
+  ],
+  "types": "build/index.d.ts",
+  "license": "MIT",
+  "author": {
+    "name": "@djidja8",
+    "email": "srdjan@timok.com",
+    "url": "https://github.com/srdjan"
+  },
+  "keywords": [
+    "react, reactjs, responsive, component"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/srdjan/react-multistep"
+  },
+  "homepage": "https://github.com/srdjan/react-multistep",
+  "bugs": {
+    "url": "https://github.com/srdjan/react-multistep/issues"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@types/react": "18.3.18",
+    "esbuild": "0.25.0",
+    "typescript": "5.7.3"
+  },
+  "peerDependencies": {
+    "react": "18.3.1"
+  },
+  "scripts": {
+    "build": "tsc",
+    "bundle": "esbuild ./build/index.js \"--define:process.env.NODE_ENV='production'\" --external:react --bundle --format=cjs --loader:.js=jsx --outdir=dist",
+    "publish": "npm publish ./"
+  }
+}
